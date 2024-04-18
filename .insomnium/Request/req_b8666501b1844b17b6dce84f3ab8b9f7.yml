@@ -1,0 +1,110 @@
+_id: req_b8666501b1844b17b6dce84f3ab8b9f7
+type: Request
+parentId: wrk_8e26e860bab04c24bfea10252470d77a
+modified: 1713354627923
+created: 1713352816362
+url: https://cumada-crs.{{envname}}.finbel.intra/public/api/v1/cache/qualifications
+name: Post qualification to cache
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+        "request": {       
+            "holder": {
+                "customsCustomer": {
+                    "referenceNumber": "ITI2",
+                    "referenceType": "EORI"
+                }
+            },
+            "qualificationType": "REX",
+            "qualificationSubType": null,
+            "applicableDate": "2021-09-09",
+            "source": null,
+            "startNumber": null,
+            "maxNumber": null,
+            "orderBy": null,
+            "versionDate": null,
+            "format": null
+        },
+        "response": {
+            "qualification": {
+                    "source": "REX",
+                    "qualificationIdentification": {
+                        "typeOfQualification": "REX",
+                        "qualificationReferenceNumber": "ITREXITREXITI2"
+                    },
+                    "qualificationValidity": {
+                        "status": [{
+                                "qualificationStatus": "01",
+                                "validityPeriod": {
+                                    "validityStartDate": "2019-09-20"
+                                }
+                            }
+                        ]
+                    },
+                    "qualificationHolder": {
+                        "customsCustomerIdentification": [{
+                                "externalReferenceNumber": "ITI2",
+                                "externalReferenceNumberType": "EORI"
+                            }
+                        ]
+                    },
+                    "decisionTakingCountry": "IT",
+                    "decisionTakingCustomsAuthority": {
+                        "referenceNumber": "IT127000",
+                        "qualifier": "COL"
+                    },
+                    "geographicalValidity": {
+                        "geographicalValidityIndication": "2",
+                        "country": ["LV", "RO", "LT", "FI", "ES", "HU", "XI", "PT", "IE", "LU", "NO", "FR", "BG", "DE", "HR", "TR", "MT", "CZ", "EE", "DK", "BE", "IS", "SI", "IT", "SE", "CH", "PL", "AT", "GR", "SK", "NL", "CY"]
+                    },
+                    "applicableGoods": [{
+                            "commodityCode": {
+                                "tariccode": "06"
+                            },
+                            "descriptionOfGoods": {
+                                "text": "LIVE TREES AND OTHER PLANTS; BULBS, ROOTS AND THE LIKE; CUT FLOWERS AND ORNAMENTAL FOLIAGE",
+                                "language": "en"
+                            }
+                        }, {
+                            "commodityCode": {
+                                "tariccode": "2204"
+                            },
+                            "descriptionOfGoods": {
+                                "text": "Wine of fresh grapes, including fortified wines; grape must other than that of heading|2009",
+                                "language": "en"
+                            }
+                        }, {
+                            "commodityCode": {
+                                "tariccode": "2105"
+                            },
+                            "descriptionOfGoods": {
+                                "text": "Ice cream and other edible ice, whether or not containing cocoa",
+                                "language": "en"
+                            }
+                        }
+                    ],
+                    "publicationAgreement": ["INVMS", "INTERNET"],
+                    "mainActivity": ["PRODUCTION"]
+                },
+                "allResult": 1
+        }    
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+  - name: User-Agent
+    value: insomnium/0.2.3-a
+authentication: {}
+metaSortKey: -1713352816361
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
+segmentParams: []
