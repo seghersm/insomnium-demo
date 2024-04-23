@@ -1,9 +1,9 @@
 _id: req_b593216a828c46ac91141c5454ce40ad
 type: Request
 parentId: wrk_8e26e860bab04c24bfea10252470d77a
-modified: 1713354671449
+modified: 1713871430950
 created: 1713354643653
-url: https://cumada-crs.dev.finbel.intra/public/api/v1/qualifications
+url: https://cumada-crs.{{envname}}.finbel.intra/public/api/v1/qualifications
 name: Get cached qualification
 description: ""
 method: GET
@@ -11,14 +11,17 @@ body:
   mimeType: application/json
 parameters:
   - name: holder.customsCustomer.referenceNumber
-    value: ITI2
+    value: ITI3
     disabled: false
+    id: pair_c90c478f3f5f465bbf4d96db82f6df71
   - name: holder.customsCustomer.referenceType
     value: EORI
     disabled: false
+    id: pair_9afe77c45ed34a2f84325c845b0ba220
   - name: applicableDate
     value: 2021-01-01
     disabled: false
+    id: pair_fbe8acf4827448f3b3ea6d1beded3b36
 headers:
   - name: accept
     value: application/json

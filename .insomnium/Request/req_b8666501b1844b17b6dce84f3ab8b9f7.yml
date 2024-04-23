@@ -1,10 +1,10 @@
 _id: req_b8666501b1844b17b6dce84f3ab8b9f7
 type: Request
 parentId: wrk_8e26e860bab04c24bfea10252470d77a
-modified: 1713354627923
+modified: 1713875767155
 created: 1713352816362
 url: https://cumada-crs.{{envname}}.finbel.intra/public/api/v1/cache/qualifications
-name: Post qualification to cache
+name: Post qualification to cache test
 description: ""
 method: POST
 body:
@@ -14,11 +14,11 @@ body:
         "request": {       
             "holder": {
                 "customsCustomer": {
-                    "referenceNumber": "ITI2",
+                    "referenceNumber": "ITI3",
                     "referenceType": "EORI"
                 }
             },
-            "qualificationType": "REX",
+            "qualificationType": "REX2",
             "qualificationSubType": null,
             "applicableDate": "2021-09-09",
             "source": null,
